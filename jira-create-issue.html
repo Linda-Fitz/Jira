@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-2.1.4.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Jira issue</title>
+</head>
+<body>
+        <div id="wrapper">
+                <h1>Create Issue</h1>
+                <form id="create-form">
+                    Summary: <input type="text" name="summary" id="summary" value=""/>
+                    <br /> 
+                    Description: <textarea name="description" placeholder="mail and phone number"></textarea>
+                    <br /> 
+                    Issue Type: <input type="text" name="type" id="type" value=""/>
+                    <br />
+                    Priority: <input type="text" name="priority" id="priority" value=""/>
+                    <br />
+                    Assignee: <input type="text" name="assignee" id="assigne" value=""/>
+                    <br />
+                    Due Date: <input type="date" name="duedate" id="duedate" value=""/>
+                    <br />
+                    Attachement: <input type="file" name="pic" id="attachement" accept="image/*">
+                    <input type="submit">
+                    <br />
+                    <input type="button" id="button" value="Create Issue"/>
+                </form>
+            </div>
+
+            <script>
+            $('#button').click(function() {
+                 $.ajax({
+                   type: "POST",
+                   url: "jira-create-issue.php",
+                   data: $('#create-form').serialize(),
+                   success: function(data){
+                      alert(data);
+                   },
+                   dataType: "html"
+                });
+            });
+        </script>
+    
+</body>
+</html>
