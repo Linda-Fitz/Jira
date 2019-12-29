@@ -6,28 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create Jira issue</title>
+    <link rel="stylesheet" href="main.css">
+    
+    
 </head>
 <body>
         <div id="wrapper">
-                <h1>Create Issue</h1>
-                <form id="create-form">
-                    Summary: <input type="text" name="summary" id="summary" value=""/>
-                    <br /> 
-                    Description: <textarea name="description" placeholder="mail and phone number"></textarea>
-                    <br /> 
-                    Issue Type: <input type="text" name="type" id="type" value=""/>
-                    <br />
-                    Priority: <input type="text" name="priority" id="priority" value=""/>
-                    <br />
-                    Assignee: <input type="text" name="assignee" id="assigne" value=""/>
-                    <br />
-                    Due Date: <input type="date" name="duedate" id="duedate" value=""/>
-                    <br />
-                    Attachement: <input type="file" name="pic" id="attachement" accept="image/*">
-                    <input type="submit">
-                    <br />
-                    <input type="button" id="button" value="Create Issue"/>
-                </form>
+                <header>
+                        <img src="images/logo.svg" alt="23andfour logo" class="logo">
+            
+                        <nav>
+                            <a href="#" class="hide-desktop">
+                                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                            </a>
+            
+                            <ul class="show-desktop hide-mobile" id="nav">
+                                <li id="exit" class="exit-btn hide-desktop">
+                                    <img src="images/exit.svg" alt="exit menu">
+                                </li>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                <section>
+                        <h1>Create Issue</h1>
+                        <form id="create-form">
+                            Summary: <input type="text" class="inputFields" name="summary" id="summary" value=""/>
+                            <br /> 
+                            Description: <textarea name="description" class="inputFields" placeholder="mail and phone number"></textarea>
+                            <br /> 
+                            Issue Type: <input type="text" class="inputFields" name="type" id="type" value=""/>
+                            <br />
+                            Priority: <input type="text" class="inputFields" name="priority" id="priority" value=""/>
+                            <br />
+                            Assignee: <input type="text" class="inputFields" name="assignee" id="assigne" value=""/>
+                            <br />
+                            Due Date: <input type="date" class="inputFields" name="duedate" id="duedate" value=""/>
+                            <br />
+                            Attachement: <input type="file" name="pic" id="attachement" accept="image/*">
+                            <input type="submit">
+                            <br />
+                            <input type="button" id="button" value="Create Issue"/>
+                        </form>
+                </section>
+                
             </div>
 
             <script>
