@@ -15,7 +15,8 @@
     
     $arr['issuetype'] = array( 'name' => $_POST['type']);
     $arr['assignee'] = array( 'name' => $_POST['assignee']);
-    $arr['priority'] = array( 'name' => $_POST['priority']);
+	$arr['priority'] = array( 'name' => $_POST['priority']);
+	$arr['attachment'] = $_POST[exec(upload-file.php)];
 	
     $json_arr['fields'] = $arr;
     
