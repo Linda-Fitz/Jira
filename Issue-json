@@ -1,0 +1,26 @@
+{
+
+    "fields": {
+        "project": {
+            "key": "TEST"
+        },
+
+        "summary": "Linda.Fitzgerald",
+
+        "issuetype": {
+            "name": "Task"
+        },
+
+      	"assignee": {
+            "name": "lusciante"
+        },
+
+        "priority": {
+            "name": "High"
+        },
+
+        "description": "lindafitzgerald94@gmail.com 067455331",
+
+        "duedate": "29-12-19"
+      }
+}
